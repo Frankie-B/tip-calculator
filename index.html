@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tippie</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tippie</title>
-</head>
+  <body>
+    <main>
+      <h1>Tippie</h1>
 
-<body>
-  <main>
-    <h1>Tippie</h1>
-  </main>
-</body>
+      <section>
+        <div>
+          <label for=yourBill">Bill</label>
+          <input type="number" placeholder="Your Bill" id="yourBill" />
+        </div>
 
+        <div>
+          <div>
+            <label for="tipInput">Select Tip Amount</label>
+            <span id="tipPercent">0%</span>
+          </div>
+          <input type="range" value="0" id="tipInput">
+        </div>
+
+        <div>
+          <span>Tip</span>
+          <span id="tipValue"></span>
+        </div>
+
+        <hr>
+
+        <div>
+          <span>Total</span>
+          <span id="totalWithTip"></span>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>
+            <label for="splitInput">Split</label>
+            <span id="splitValue">1 Person</span>
+          </div>
+            <input type="range" min="1" max="10" value="1" id="splitInput">
+        </div>
+        <div>
+          <span>Bill Each</span>
+          <span id="billEach"></span>
+        </div>
+        <div>
+          <span>Tip Each</span>
+          <span id="tipEach"></span>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
