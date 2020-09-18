@@ -101,3 +101,14 @@ input[type='number'] {
 .range::-moz-focus-outer {
   border: 0;
 }
+
+@media (min-width: 768px) {
+  main {
+    justify-content: center;
+    max-width: 50vw;
+  }
+
+  .bill input {
+    flex: 1;
+  }
+}
